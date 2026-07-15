@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# JetBrains / PyCharm
+.idea/
+
+# Arquivos temporários e backups
+*.tmp
+*.bak
+*~
+
+# Logs
+*.log
+
+# Python (caso exercícios futuros usem)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
