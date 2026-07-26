@@ -2,6 +2,8 @@
 
 [← Módulo anterior](01-introducao-instalacao.md) | [Voltar ao índice](README.md) | [Próximo módulo →](03-edicao-produtiva.md)
 
+> 🎬 **Slides da aula:** [apresentacao-02-interface.pdf](apresentacao-02-interface.pdf)
+
 ---
 
 ## 2.1 Visão geral

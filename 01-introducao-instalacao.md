@@ -2,6 +2,8 @@
 
 [← Voltar ao índice](README.md) | [Próximo módulo →](02-interface.md)
 
+> 🎬 **Slides da aula:** [apresentacao-01-introducao-instalacao.pdf](apresentacao-01-introducao-instalacao.pdf)
+
 ---
 
 ## 1.1 O que é o VS Code?

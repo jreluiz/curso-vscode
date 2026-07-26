@@ -2,6 +2,8 @@
 
 [← Módulo anterior](05-terminal-integrado.md) | [Voltar ao índice](README.md) | [Próximo módulo →](07-configuracoes-produtividade.md)
 
+> 🎬 **Slides da aula:** [apresentacao-06-git-github-no-vscode.pdf](apresentacao-06-git-github-no-vscode.pdf)
+
 ---
 
 > 📚 **Pré-requisito:** este módulo assume que você já conhece o básico de Git e GitHub (add, commit, push, pull). Aqui vamos ver como o VS Code **facilita** o que você já sabe fazer no terminal — sem substituir o entendimento dos comandos!

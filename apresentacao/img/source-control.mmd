@@ -1,0 +1,32 @@
+---
+config:
+  theme: base
+  # fontFamily precisa ser chave de topo — dentro de themeVariables é ignorada
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 22px
+    lineColor: "#007acc"
+    primaryColor: "#e6f3fb"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#007acc"
+    edgeLabelBackground: "#fdfdfb"
+  flowchart:
+    nodeSpacing: 60
+    padding: 20
+---
+flowchart LR
+    A["<b>Changes</b><br><br>o que mudou"]
+    B["<b>Staged Changes</b><br><br>o que vai<br>no commit"]
+    C["<b>Commit</b><br><br>no histórico<br>local"]
+    D["<b>Sync Changes</b><br><br>no GitHub"]
+
+    A -->|"botão <b>+</b><br><i>git add</i>"| B
+    B -->|"<b>Commit</b><br><i>git commit</i>"| C
+    C -->|"<b>Sync</b><br><i>git pull + push</i>"| D
+
+    classDef caixa fill:#e6f3fb,stroke:#007acc,stroke-width:4px,color:#1a1a1a
+    classDef final fill:#007acc,stroke:#005a99,stroke-width:4px,color:#ffffff
+    class A,B,C caixa
+    class D final
+
+    linkStyle 0,1,2 stroke:#007acc,stroke-width:3.5px

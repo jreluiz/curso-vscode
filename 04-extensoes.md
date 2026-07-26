@@ -2,6 +2,8 @@
 
 [← Módulo anterior](03-edicao-produtiva.md) | [Voltar ao índice](README.md) | [Próximo módulo →](05-terminal-integrado.md)
 
+> 🎬 **Slides da aula:** [apresentacao-04-extensoes.pdf](apresentacao-04-extensoes.pdf)
+
 ---
 
 ## 4.1 O que são extensões?

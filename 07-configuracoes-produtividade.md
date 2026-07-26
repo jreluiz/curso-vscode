@@ -2,6 +2,8 @@
 
 [← Módulo anterior](06-git-github-no-vscode.md) | [Voltar ao índice](README.md)
 
+> 🎬 **Slides da aula:** [apresentacao-07-configuracoes-produtividade.pdf](apresentacao-07-configuracoes-produtividade.pdf)
+
 ---
 
 ## 7.1 O sistema de configurações

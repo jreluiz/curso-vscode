@@ -1,0 +1,25 @@
+---
+config:
+  theme: base
+  # fontFamily precisa ser chave de topo — dentro de themeVariables é ignorada
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 23px
+    lineColor: "#007acc"
+    primaryColor: "#e6f3fb"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#007acc"
+    edgeLabelBackground: "#fdfdfb"
+---
+stateDiagram-v2
+    direction LR
+
+    editar: <b>editar</b><br>no editor
+    salvar: <b>Ctrl+S</b><br>salvar
+    focar: <b>Ctrl+J</b><br>ir ao terminal
+    rodar: <b>node arquivo.js</b><br>ver a saída
+
+    editar --> salvar
+    salvar --> focar
+    focar --> rodar
+    rodar --> editar: e de novo
