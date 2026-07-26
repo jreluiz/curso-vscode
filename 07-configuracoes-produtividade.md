@@ -2,7 +2,7 @@
 
 [← Módulo anterior](06-git-github-no-vscode.md) | [Voltar ao índice](README.md)
 
-> 🎬 **Slides da aula:** [apresentacao-07-configuracoes-produtividade.pdf](apresentacao/apresentacao-07-configuracoes-produtividade.pdf)
+> 🎬 Slides da aula: [apresentacao-07-configuracoes-produtividade.pdf](apresentacao/apresentacao-07-configuracoes-produtividade.pdf)
 
 ---
 

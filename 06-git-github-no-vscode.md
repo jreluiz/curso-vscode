@@ -2,7 +2,7 @@
 
 [← Módulo anterior](05-terminal-integrado.md) | [Voltar ao índice](README.md) | [Próximo módulo →](07-configuracoes-produtividade.md)
 
-> 🎬 **Slides da aula:** [apresentacao-06-git-github-no-vscode.pdf](apresentacao/apresentacao-06-git-github-no-vscode.pdf)
+> 🎬 Slides da aula: [apresentacao-06-git-github-no-vscode.pdf](apresentacao/apresentacao-06-git-github-no-vscode.pdf)
 
 ---
 

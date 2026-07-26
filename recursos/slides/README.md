@@ -2,28 +2,31 @@
 
 As apresentações de cada módulo são escritas em **Markdown** e convertidas em PDF pelo [Marp](https://marp.app/). Nada precisa ser instalado: o `npx` baixa as ferramentas sob demanda e o export usa o Google Chrome que já está na máquina.
 
-Diferente dos outros cursos da trilha, aqui o material escrito é **um `.md` por módulo na raiz** do repositório — não há subpasta por módulo. Por isso as apresentações ficam todas juntas, em `apresentacao/`:
+Nos outros quatro cursos da trilha cada módulo é uma **pasta**, e a apresentação mora numa subpasta `apresentacao/` dentro dela. Aqui não dá: o material escrito é **um `.md` por módulo na raiz** do repositório, sem pasta por módulo. A adaptação fiel do padrão, então, é uma única pasta `apresentacao/` com todos os decks:
 
 ```
 curso-vscode/
 ├── 01-introducao-instalacao.md              # a aula escrita
 ├── 02-interface.md
 ├── ...
-└── apresentacao/
-    ├── apresentacao-01-introducao-instalacao.md    # a fonte  ← edite este
-    ├── apresentacao-01-introducao-instalacao.pdf   # o gerado ← projete este
-    ├── ...
-    ├── img/
-    │   ├── ciclo-editar-rodar.mmd           # diagrama, versão para projeção
-    │   ├── ciclo-editar-rodar.svg           # gerado do .mmd
-    │   ├── source-control.mmd
-    │   └── source-control.svg
+├── apresentacao/
+│   ├── apresentacao-01-introducao-instalacao.md   # a fonte  ← edite este
+│   ├── apresentacao-01-introducao-instalacao.pdf  # o gerado ← projete este
+│   ├── ...
+│   └── img/
+│       ├── ciclo-editar-rodar.mmd           # diagrama, versão para projeção
+│       ├── ciclo-editar-rodar.svg           # gerado do .mmd
+│       ├── source-control.mmd
+│       └── source-control.svg
+└── recursos/
     └── slides/                              # a infraestrutura (esta pasta)
         ├── trilha.css
         ├── gerar.sh
         ├── marp.config.mjs
         └── conferir.py
 ```
+
+A infraestrutura fica em `recursos/slides/` como nos outros quatro cursos — assim o comando é o mesmo em toda a trilha.
 
 Cada módulo aponta para o seu PDF logo abaixo do título, com uma linha `> 🎬 **Slides da aula:**`.
 
@@ -32,10 +35,10 @@ Cada módulo aponta para o seu PDF logo abaixo do título, com uma linha `> 🎬
 ## Gerar
 
 ```bash
-bash apresentacao/slides/gerar.sh              # tudo o que estiver desatualizado
-bash apresentacao/slides/gerar.sh 03-edicao    # só um módulo
-bash apresentacao/slides/gerar.sh --forcar     # regera tudo
-bash apresentacao/slides/gerar.sh --html       # gera .html além do .pdf
+bash recursos/slides/gerar.sh              # tudo o que estiver desatualizado
+bash recursos/slides/gerar.sh 03-edicao    # só um módulo
+bash recursos/slides/gerar.sh --forcar     # regera tudo
+bash recursos/slides/gerar.sh --html       # gera .html além do .pdf
 ```
 
 O script compara datas: só regera o que mudou, e regera todos os decks quando o tema muda.
@@ -44,14 +47,14 @@ O script compara datas: só regera o que mudou, e regera todos os decks quando o
 
 > 💡 **Enquanto escreve**, a extensão [Marp for VS Code](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) mostra o preview lado a lado e evita rodar o script a cada ajuste. Para ela enxergar o tema, adicione em `.vscode/settings.json`:
 > ```json
-> { "markdown.marp.themes": ["./apresentacao/slides/trilha.css"] }
+> { "markdown.marp.themes": ["./recursos/slides/trilha.css"] }
 > ```
 
 ## Conferir se algum slide estourou
 
 ```bash
-python3 apresentacao/slides/conferir.py             # todos os decks
-python3 apresentacao/slides/conferir.py 03-edicao   # só um
+python3 recursos/slides/conferir.py             # todos os decks
+python3 recursos/slides/conferir.py 03-edicao   # só um
 ```
 
 **O Marp não avisa quando o conteúdo passa do slide** — ele simplesmente deixa o texto atravessar o rodapé, e o defeito só aparece olhando o PDF. Este script estima a altura de cada slide a partir das métricas do `trilha.css` e marca:

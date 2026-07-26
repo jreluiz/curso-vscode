@@ -2,7 +2,7 @@
 
 [← Módulo anterior](04-extensoes.md) | [Voltar ao índice](README.md) | [Próximo módulo →](06-git-github-no-vscode.md)
 
-> 🎬 **Slides da aula:** [apresentacao-05-terminal-integrado.pdf](apresentacao/apresentacao-05-terminal-integrado.pdf)
+> 🎬 Slides da aula: [apresentacao-05-terminal-integrado.pdf](apresentacao/apresentacao-05-terminal-integrado.pdf)
 
 ---
 
