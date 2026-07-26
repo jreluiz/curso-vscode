@@ -31,18 +31,18 @@ footer: '🔵 Curso de VS Code · Módulo 2'
 ## A janela em seis regiões
 
 ```
-┌─┬──────────────────────────────────────────────┐
-│A│  Abas dos arquivos abertos                   │
-│t│ ┌──────────────────────────────────────────┐ │
-│i│ │                                          │ │
-│v│ │            EDITOR                        │ │
-│i│ │       (onde você escreve código)         │ │
-│d│ ├──────────────────────────────────────────┤ │
-│a│ │  PAINEL (Terminal, Problemas, Saída...)  │ │
-│d│ └──────────────────────────────────────────┘ │
-│e├──────────────────────────────────────────────┤
-│s│  BARRA DE STATUS (branch git, linguagem...)  │
-└─┴──────────────────────────────────────────────┘
+┌──┬───────────┬─────────────────────────────────┐
+│A │           │  Abas dos arquivos abertos      │
+│T │  BARRA    │ ┌─────────────────────────────┐ │
+│I │  LATERAL  │ │                             │ │
+│V │           │ │          EDITOR             │ │
+│I │ Explorer  │ │  (onde você escreve código) │ │
+│D │ Busca     │ ├─────────────────────────────┤ │
+│A │ Git       │ │  PAINEL (Terminal, Saída)   │ │
+│D │ Extensões │ └─────────────────────────────┘ │
+│E ├───────────┴─────────────────────────────────┤
+│S │  BARRA DE STATUS (branch, linguagem)        │
+└──┴─────────────────────────────────────────────┘
 ```
 
 ---

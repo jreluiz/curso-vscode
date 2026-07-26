@@ -2,12 +2,12 @@
 """
 Estima a altura de cada slide e avisa quando o conteúdo passa da área útil.
 
-    python3 recursos/slides/conferir.py                 # todos os decks
-    python3 recursos/slides/conferir.py 06-fluxo        # só um
+    python3 apresentacao/slides/conferir.py             # todos os decks
+    python3 apresentacao/slides/conferir.py 03-edicao   # só um
 
 Por que existe: o Marp NÃO avisa quando o conteúdo estoura o slide — ele
 simplesmente deixa o texto passar por cima do rodapé, e o defeito só aparece
-olhando o PDF. Com 61 decks previstos, conferir a olho um a um não escala.
+olhando o PDF. Com 62 decks na trilha, conferir a olho um a um não escala.
 
 É uma ESTIMATIVA, calibrada nas métricas do trilha.css. Serve para apontar
 onde olhar, não para substituir a conferida visual dos slides marcados.
@@ -140,8 +140,9 @@ def main() -> int:
     filtro = sys.argv[1] if len(sys.argv) > 1 else ""
     problemas = 0
 
-    # rglob, não glob("*/…"): em curso-vscode os decks ficam na RAIZ do
-    # repositório, porque lá o material é um .md por módulo, sem subpasta.
+    # rglob, não glob("*/…"): a profundidade dos decks varia por curso. Aqui
+    # eles ficam todos em `apresentacao/`; nos cursos por aula, em
+    # `bloco-N-tema/aula-NN-nome/`. O rglob cobre os dois casos.
     decks = (d for d in raiz.rglob("apresentacao-*.md") if ".git" not in d.parts)
     for deck in sorted(decks):
         if filtro and filtro not in str(deck):

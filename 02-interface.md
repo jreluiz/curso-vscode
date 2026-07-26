@@ -2,7 +2,7 @@
 
 [← Módulo anterior](01-introducao-instalacao.md) | [Voltar ao índice](README.md) | [Próximo módulo →](03-edicao-produtiva.md)
 
-> 🎬 **Slides da aula:** [apresentacao-02-interface.pdf](apresentacao-02-interface.pdf)
+> 🎬 **Slides da aula:** [apresentacao-02-interface.pdf](apresentacao/apresentacao-02-interface.pdf)
 
 ---
 
@@ -11,23 +11,21 @@
 A janela do VS Code é dividida em **6 regiões principais**:
 
 ```
-┌─┬──────────────────────────────────────────────┐
-│A│  Abas dos arquivos abertos                   │
-│t│ ┌──────────────────────────────────────────┐ │
-│i│ │                                          │ │
-│v│ │                                          │ │
-│i│ │            EDITOR                        │ │
-│d│ │       (onde você escreve código)         │ │
-│a│ │                                          │ │
-│d│ ├──────────────────────────────────────────┤ │
-│e│ │  PAINEL (Terminal, Problemas, Saída...)  │ │
-│s│ └──────────────────────────────────────────┘ │
-├─┴──────────────────────────────────────────────┤
-│  BARRA DE STATUS (branch git, linguagem, etc.) │
-└────────────────────────────────────────────────┘
-   ↑
-   Barra Lateral (Explorer, Busca, Git, Extensões...)
+┌──┬───────────┬─────────────────────────────────┐
+│A │           │  Abas dos arquivos abertos      │
+│T │  BARRA    │ ┌─────────────────────────────┐ │
+│I │  LATERAL  │ │                             │ │
+│V │           │ │          EDITOR             │ │
+│I │ Explorer  │ │  (onde você escreve código) │ │
+│D │ Busca     │ ├─────────────────────────────┤ │
+│A │ Git       │ │  PAINEL (Terminal, Saída)   │ │
+│D │ Extensões │ └─────────────────────────────┘ │
+│E ├───────────┴─────────────────────────────────┤
+│S │  BARRA DE STATUS (branch, linguagem)        │
+└──┴─────────────────────────────────────────────┘
 ```
+
+A coluna estreita da esquerda, com as letras na vertical, é a **Barra de Atividades** — os ícones que trocam o conteúdo da Barra Lateral ao lado.
 
 Vamos conhecer cada parte.
 
@@ -163,7 +161,7 @@ A faixa azul (ou colorida) no rodapé traz informações úteis. Da esquerda par
 ---
 
 ## 2.8 Modo Zen e tela cheia
-z
+
 Para apresentações ou foco total:
 
 - `F11` — tela cheia

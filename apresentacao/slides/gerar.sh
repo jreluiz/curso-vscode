@@ -2,23 +2,27 @@
 #
 # Gera as apresentações do curso.
 #
-#   bash recursos/slides/gerar.sh              # gera tudo o que estiver desatualizado
-#   bash recursos/slides/gerar.sh 01-conceitos # gera só um módulo
-#   bash recursos/slides/gerar.sh --forcar     # regera tudo, ignorando cache
-#   bash recursos/slides/gerar.sh --html       # gera .html além do .pdf
+#   bash apresentacao/slides/gerar.sh            # tudo o que estiver desatualizado
+#   bash apresentacao/slides/gerar.sh 03-edicao  # gera só um módulo
+#   bash apresentacao/slides/gerar.sh --forcar   # regera tudo, ignorando cache
+#   bash apresentacao/slides/gerar.sh --html     # gera .html além do .pdf
 #
-# Pipeline por módulo:
-#   NN-modulo/img/*.mmd                → NN-modulo/img/*.svg      (mermaid-cli)
-#   NN-modulo/apresentacao-NN-*.md     → NN-modulo/apresentacao-NN-*.pdf  (marp-cli)
+# Pipeline:
+#   apresentacao/img/*.mmd            → apresentacao/img/*.svg      (mermaid-cli)
+#   apresentacao/apresentacao-NN-*.md → apresentacao/apresentacao-NN-*.pdf (marp-cli)
 #
 # Requisitos: node + npx (as ferramentas são baixadas no cache do npx) e
 # Google Chrome instalado, usado pelo Marp para exportar o PDF.
 
 set -euo pipefail
 
-RAIZ="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-TEMA="$RAIZ/recursos/slides/trilha.css"
-CONFIG="$RAIZ/recursos/slides/marp.config.mjs"
+# O diretório do próprio script é a fonte da verdade: o tema e a config moram
+# ao lado dele. Assim mover `slides/` de lugar não quebra nada — foi
+# exatamente o que aconteceu quando os decks passaram para `apresentacao/`.
+AQUI="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+RAIZ="$(cd "$AQUI/../.." && pwd)"
+TEMA="$AQUI/trilha.css"
+CONFIG="$AQUI/marp.config.mjs"
 
 MERMAID="@mermaid-js/mermaid-cli@11"
 MARP="@marp-team/marp-cli@4"
@@ -53,6 +57,17 @@ if [[ -z "${CHROME_PATH:-}" ]]; then
   echo "   Instale o Google Chrome ou defina CHROME_PATH manualmente."
   exit 1
 fi
+
+# Sem isto a ausência do tema passa despercebida: o cache de mtime diz que
+# está tudo em dia, o script imprime "✅ 7 em dia" e sai com 0. O erro só
+# aparece na primeira edição de um deck, longe daqui.
+for arquivo in "$TEMA" "$CONFIG"; do
+  if [[ ! -f "$arquivo" ]]; then
+    echo "❌ Arquivo de configuração não encontrado: $arquivo"
+    echo "   Ele deve ficar ao lado do gerar.sh, em $AQUI/"
+    exit 1
+  fi
+done
 
 # `desatualizado ORIGEM DESTINO` → 0 quando precisa regerar
 desatualizado() {

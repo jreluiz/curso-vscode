@@ -2,7 +2,7 @@
 
 [← Módulo anterior](02-interface.md) | [Voltar ao índice](README.md) | [Próximo módulo →](04-extensoes.md)
 
-> 🎬 **Slides da aula:** [apresentacao-03-edicao-produtiva.pdf](apresentacao-03-edicao-produtiva.pdf)
+> 🎬 **Slides da aula:** [apresentacao-03-edicao-produtiva.pdf](apresentacao/apresentacao-03-edicao-produtiva.pdf)
 
 ---
 

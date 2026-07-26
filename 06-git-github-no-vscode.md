@@ -2,7 +2,7 @@
 
 [← Módulo anterior](05-terminal-integrado.md) | [Voltar ao índice](README.md) | [Próximo módulo →](07-configuracoes-produtividade.md)
 
-> 🎬 **Slides da aula:** [apresentacao-06-git-github-no-vscode.pdf](apresentacao-06-git-github-no-vscode.pdf)
+> 🎬 **Slides da aula:** [apresentacao-06-git-github-no-vscode.pdf](apresentacao/apresentacao-06-git-github-no-vscode.pdf)
 
 ---
 
@@ -43,7 +43,7 @@ Clique no ícone 🔀 na barra de atividades (ou `Ctrl+Shift+G`). Se a pasta abe
 5. Clique em **Commit**
 6. Clique em **Sync Changes** para enviar ao GitHub
 
-> 💡 **Boa prática:** mensagens de commit seguem boas práticas — verbo no imperativo, descrição clara do *quê* e *por quê*. "arrumei" e "final2" seguem proibidos! 😉
+> 💡 **A mensagem não muda porque o commit saiu de um botão:** verbo no presente (*Adiciona*, *Corrige*, *Remove*) e uma descrição clara do **quê** e do **porquê**. "arrumei" e "final2" continuam proibidos! 😉
 
 ## 6.3 Vendo as diferenças (diff)
 

@@ -37,6 +37,9 @@ Ao final deste material, você será capaz de:
 - 📄 [**Cheatsheet**](CHEATSHEET.md) — todos os atalhos e comandos em uma página
 - 🔧 [**Troubleshooting**](TROUBLESHOOTING.md) — soluções para problemas comuns
 - ✏️ [**Exercícios**](exercicios/README.md) — atividades práticas de cada módulo
+- 🎬 [**Apresentações**](apresentacao/) — os slides de cada módulo em PDF, prontos para projetar
+
+> 🎬 Cada módulo traz o link direto para os seus slides logo abaixo do título. Para editar ou regerar, veja [como as apresentações são feitas](apresentacao/slides/README.md).
 
 ---
 

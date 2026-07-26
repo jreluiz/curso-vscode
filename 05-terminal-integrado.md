@@ -2,7 +2,7 @@
 
 [← Módulo anterior](04-extensoes.md) | [Voltar ao índice](README.md) | [Próximo módulo →](06-git-github-no-vscode.md)
 
-> 🎬 **Slides da aula:** [apresentacao-05-terminal-integrado.pdf](apresentacao-05-terminal-integrado.pdf)
+> 🎬 **Slides da aula:** [apresentacao-05-terminal-integrado.pdf](apresentacao/apresentacao-05-terminal-integrado.pdf)
 
 ---
 
@@ -14,7 +14,7 @@ Programar envolve alternar o tempo todo entre **escrever código** e **executar 
 
 | Atalho | Ação |
 |--------|------|
-| `Ctrl+'` (ou `Ctrl+J`) | Abre/fecha o terminal * |
+| `` Ctrl+` `` (ou `Ctrl+J`) | Abre/fecha o terminal * |
 | Botão **+** | Cria um novo terminal |
 | Botão 🗑️ | Encerra o terminal atual |
 | Ícone de divisão | Divide em dois terminais lado a lado |

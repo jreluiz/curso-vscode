@@ -2,7 +2,7 @@
 
 [← Módulo anterior](06-git-github-no-vscode.md) | [Voltar ao índice](README.md)
 
-> 🎬 **Slides da aula:** [apresentacao-07-configuracoes-produtividade.pdf](apresentacao-07-configuracoes-produtividade.pdf)
+> 🎬 **Slides da aula:** [apresentacao-07-configuracoes-produtividade.pdf](apresentacao/apresentacao-07-configuracoes-produtividade.pdf)
 
 ---
 
@@ -102,7 +102,7 @@ O `console.log` é útil, mas o **debugger** é profissional. Introdução rápi
 
 - **`Ctrl+K Ctrl+S`** — abre a lista de **todos os atalhos** (e permite personalizá-los)
 - **Reabrir aba fechada:** `Ctrl+Shift+T` (igual ao navegador!)
-- **Abrir a mesma pasta em nova janela:** útil com dois monitores
+- **Abrir a mesma pasta em nova janela:** `Ctrl+Shift+P` → _Duplicate Workspace in New Window_ — útil com dois monitores
 - **Perfis:** o VS Code permite criar perfis com conjuntos diferentes de extensões e configurações (ex.: um perfil "Java", um "Web") — `Ctrl+Shift+P` → _Profiles_
 - **Sincronização de configurações:** com a conta GitHub, o _Settings Sync_ leva suas configurações e extensões para qualquer máquina — ⚠️ evite ativar em computadores compartilhados do laboratório
 

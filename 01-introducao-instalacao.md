@@ -2,7 +2,7 @@
 
 [← Voltar ao índice](README.md) | [Próximo módulo →](02-interface.md)
 
-> 🎬 **Slides da aula:** [apresentacao-01-introducao-instalacao.pdf](apresentacao-01-introducao-instalacao.pdf)
+> 🎬 **Slides da aula:** [apresentacao-01-introducao-instalacao.pdf](apresentacao/apresentacao-01-introducao-instalacao.pdf)
 
 ---
 
@@ -12,7 +12,7 @@ O **Visual Studio Code** (ou apenas **VS Code**) é um **editor de código-fonte
 
 ### Editor de código ≠ IDE ≠ editor de texto
 
-É comum confundir esses três conceitos:v
+É comum confundir esses três conceitos:
 
 | Ferramenta | Exemplo | Característica |
 |------------|---------|----------------|

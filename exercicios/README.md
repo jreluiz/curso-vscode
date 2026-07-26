@@ -58,7 +58,9 @@ Agora, **sem copiar e colar**:
 - Use `Shift+Alt+↓` para duplicar a última linha
 - Use `Ctrl+Shift+K` para excluir a duplicata
 
-**3.2** Ainda no `pratica.js`: use `Ctrl+D` para selecionar todas as ocorrências de `console` e trocar por `console.error`. Depois desfaça tudo com `Ctrl+Z`.
+**3.2** Ainda no `pratica.js`: dê duplo clique em `log` (na primeira linha com `console.log`) e use `Ctrl+D` para selecionar as outras ocorrências. Digite `error` — os três viram `console.error`. Depois desfaça tudo com `Ctrl+Z`.
+
+> 💡 Repare que selecionamos **`log`**, não `console`. O `Ctrl+D` seleciona a palavra sob o cursor, e o ponto separa palavras: se você selecionasse `console` e digitasse `console.error`, o resultado seria `console.error.log(a)` — que não existe.
 
 **3.3** Use `F2` para renomear a variável `a` para `primeiroValor`. Observe que só as referências corretas mudaram.
 
@@ -66,7 +68,9 @@ Agora, **sem copiar e colar**:
 
 **3.5** Ative o **Format On Save** e comprove: desalinhe o código, salve, veja a mágica.
 
-**3.6 Desafio:** usando multicursor (`Ctrl+Alt+↓`), transforme esta lista em declarações `const`:
+**3.6** Em `respostas-m3.md`, responda: por que `F2` é mais seguro que `Ctrl+D` para renomear uma variável? Dê um exemplo em que o `Ctrl+D` erraria.
+
+**3.7 Desafio:** usando multicursor (`Ctrl+Alt+↓`), transforme esta lista em declarações `const`:
 
 ```
 banana
@@ -81,6 +85,10 @@ const banana = "banana";
 const maçã = "maçã";
 const uva = "uva";
 ```
+
+> 💡 Dica: com os três cursores no início das linhas, `Shift+End` seleciona as três palavras de uma vez — e o `Ctrl+C` guarda **uma por cursor**, para o `Ctrl+V` colar cada uma no seu lugar.
+>
+> ⚠️ O JavaScript aceita acento em nome de variável, por isso `maçã` funciona. Mas **não faça isso em projeto de verdade**: use `maca` ou `maracuja`. Nomes sem acento evitam problema de codificação entre sistemas.
 
 ---
 
@@ -112,7 +120,9 @@ for (let i = 1; i <= 5; i++) {
 
 Execute com `node contador.js`. Cole a saída em `respostas-m5.md`.
 
-**5.3** Modifique o loop para ser **infinito** (`while (true)` imprimindo algo), execute e **interrompa com `Ctrl+C`**. Anote o que aconteceu.
+**5.3** Crie um arquivo **novo**, `infinito.js`, com um `while (true)` imprimindo algo. Execute e **interrompa com `Ctrl+C`**. Anote o que aconteceu.
+
+> ⚠️ Em arquivo separado de propósito: o `contador.js` volta a ser usado no Módulo 7, e você vai precisar dele com o laço original.
 
 **5.4** (Java) Crie uma classe `Ola.java` com um `main` que imprime seu nome. Execute **das duas formas**: pelo botão Run e compilando manualmente com `javac`/`java` no terminal.
 
@@ -164,6 +174,7 @@ Execute com `node contador.js`. Cole a saída em `respostas-m5.md`.
 Ao concluir todos os módulos, seu repositório `exercicios-vscode` deve ter:
 
 - [ ] Todos os arquivos de resposta (`respostas-m1.md` a `respostas-m7.md`)
+- [ ] O `conflito-resolvido.md`, se você fez o desafio 6.6
 - [ ] Histórico de commits **limpo e descritivo** (será avaliado!)
 - [ ] Pelo menos uma branch além da `main` no histórico
 - [ ] O arquivo `.vscode/settings.json` versionado
