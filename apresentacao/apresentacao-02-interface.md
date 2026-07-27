@@ -110,6 +110,17 @@ Para fixar de vez:
 
 ---
 
+<!-- _class: lista-limpa -->
+
+## Dois auxiliares que ficam em volta do código
+
+- 🗺️ **Minimapa** — a coluna estreita à **direita**: o arquivo inteiro em miniatura. Ajuda em arquivo longo; some em `View → Appearance → Minimap`;
+- 🍞 **Breadcrumbs** — a trilha **acima** do código: `src > utils > ajuda.js > minhaFuncao`. Clicar em cada parte navega pela estrutura.
+
+> 💡 Os dois respondem à mesma pergunta: **onde eu estou neste arquivo?**
+
+---
+
 <!-- _class: lead -->
 
 ## Se você decorar um único atalho
